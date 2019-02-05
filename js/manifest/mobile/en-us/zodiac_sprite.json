@@ -1,0 +1,16 @@
+{
+    "image": [
+        { "id": "sprite_01", "src": "content/zodiac_sprite/mobile/en-us/rat.png" },
+        { "id": "sprite_02", "src": "content/zodiac_sprite/mobile/en-us/ox.png" },
+        { "id": "sprite_03", "src": "content/zodiac_sprite/mobile/en-us/tiger.png"},
+        { "id": "sprite_04", "src": "content/zodiac_sprite/mobile/en-us/rabbit.png" },
+        { "id": "sprite_05", "src": "content/zodiac_sprite/mobile/en-us/dragon.png" },
+        { "id": "sprite_06", "src": "content/zodiac_sprite/mobile/en-us/snake.png" },
+        { "id": "sprite_07", "src": "content/zodiac_sprite/mobile/en-us/horse.png" },
+        { "id": "sprite_08", "src": "content/zodiac_sprite/mobile/en-us/goat.png"},
+        { "id": "sprite_09", "src": "content/zodiac_sprite/mobile/en-us/monkey.png"},
+        { "id": "sprite_10", "src": "content/zodiac_sprite/mobile/en-us/rooster.png"},
+        { "id": "sprite_11", "src": "content/zodiac_sprite/mobile/en-us/dog.png"},
+        { "id": "sprite_12", "src": "content/zodiac_sprite/mobile/en-us/pig.png" }        
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "image": [
+        { "id": "img_guide_01", "src": "content/hand_guide_diagram/rat.png" },
+        { "id": "img_guide_02", "src": "content/hand_guide_diagram/ox.png" },
+        { "id": "img_guide_03", "src": "content/hand_guide_diagram/tiger.png"},
+        { "id": "img_guide_04", "src": "content/hand_guide_diagram/rabbit.png" },
+        { "id": "img_guide_05", "src": "content/hand_guide_diagram/dragon.png" },
+        { "id": "img_guide_06", "src": "content/hand_guide_diagram/snake.png" },
+        { "id": "img_guide_07", "src": "content/hand_guide_diagram/horse.png" },
+        { "id": "img_guide_08", "src": "content/hand_guide_diagram/goat.png"},
+        { "id": "img_guide_09", "src": "content/hand_guide_diagram/monkey.png"},
+        { "id": "img_guide_10", "src": "content/hand_guide_diagram/rooster.png"},
+        { "id": "img_guide_11", "src": "content/hand_guide_diagram/dog.png"},
+        { "id": "img_guide_12", "src": "content/hand_guide_diagram/pig.png" }        
+    ]
+
+}

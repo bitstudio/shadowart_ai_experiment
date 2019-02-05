@@ -1,0 +1,439 @@
+/*
+ * Copyright 2018 Google LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* @font-face {
+    font-family: 'SupermercadoOneRegular';
+    src: url('../content/fonts/en-us/SupermercadoOne-Regular.ttf');
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+} */
+html{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* -webkit-overflow-scrolling: auto ; */
+}
+
+body {
+    /* width: 1920px;
+    height: 1080px;
+    max-width: 1920px;
+    max-height: 1080px; */
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    /* position: relative; */
+
+    /* position: fixed; */
+    /* touch-action: none; */
+} 
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+
+.my-container {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.center-message {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    color: #b65f5b;
+}
+
+
+.display-camera-container {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    top: 51%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 60%;
+    margin: 0 auto;
+
+}
+
+.rcorners {
+    border-radius: 50%;
+    background: #c2c2c2;
+    padding: 0px; 
+    width: auto;
+    height: auto; 
+}
+
+.rcorners_2{
+    border-radius: 50%; 
+    width: auto;
+    height: auto; 
+  }
+
+ #parent-wrapper{
+    vertical-align: middle;
+    
+ }
+
+ .inner {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+ #fade-wrapper {
+    display: none;
+    vertical-align: middle;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url('../content/ui/bg.jpg');
+    background-size: cover;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    
+}
+div#fade-wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-message-color {
+    color: #b65f5b;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	border-radius:50px;
+	text-align:center;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.play-again-btn {
+    background-color: transparent;
+    background: url('../content/ui/play_again.png')  no-repeat;
+    background-size: contain;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+#btn_play {
+    color: #b65f5b;
+    font-family: 'SupermercadoOneRegular';
+    background-color: transparent;
+    background-image: url("../content/ui/en-us/play.png");
+    background-size: cover;
+    box-shadow: transparent;
+    bottom: -1000;
+    right: -1000;
+
+}
+
+#btn_play_end {
+    color: #b65f5b;
+    font-family: 'SupermercadoOneRegular';
+    background-color: transparent;
+    background-image: url("../content/ui/en-us/play.png");
+    background-size: cover;
+    box-shadow: transparent;
+    bottom: -1000;
+    right: -1000;
+}
+
+#btn_practice{
+    color: #b65f5b;
+    font-family: 'SupermercadoOneRegular';
+    bottom: -1200;
+    right: -1200;
+}
+
+#btn_next{
+    background-image: url("../content/ui/en-us/next.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: relative;
+    bottom: -1200;
+    right: -1200;
+}
+
+#btn_select_zodiac{
+    background-image: url("../content/ui/en-us/next.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: transparent;    
+    width: auto;
+
+    /* position: relative; */
+
+}
+
+#btn_begin {
+    background-image: url("../content/ui/en-us/begin.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: relative;
+    bottom: -1200;
+    right: -1200;
+}
+
+
+#calibrate_message{
+    font-family: 'SupermercadoOneRegular'; 
+    font-size:0.2vh; 
+    color: gray;
+    position: relative;
+    bottom: -1500;
+    right: -1200;
+    /* text-shadow: 2px 2px #000 */
+}
+
+
+#select_zodiac {
+    bottom: -1500;
+}
+
+
+#select_year {
+    bottom: -1500;
+}
+
+#btn_save {
+    background-image: url("../content/ui/en-us/download.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: absolute;
+    bottom: -1200;
+    right: -1200;
+}
+
+#btn_fb {
+    background-image: url("../content/ui/en-us/facebook.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: absolute;
+    bottom: -1200;
+    right: -1200;
+}
+
+#btn_twitter {
+    background-image: url("../content/ui/en-us/twitter.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: absolute;
+    bottom: -1200;
+    right: -1200;
+}
+
+#select_zodiac {
+    background-image: url("../content/ui/animal_button/rat_button.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: absolute; 
+    /* bottom: -1200;
+    right: -1200; */
+}
+
+#select_year {
+    background-image: url("../content/ui/animal_button/calendar_button.png");
+    background-size: cover;
+    box-shadow: transparent;
+    position: absolute; 
+    padding: 0;
+    text-decoration:none;
+    /* bottom: -1200;
+    right: -1200; */
+}
+
+
+.intro__footer-link--right {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+    /* color: #929395; */
+    font-size: 2.0vmin;
+    position: absolute;
+    text-decoration: none;
+    /* bottom: 10vh;
+    right: 12.0vw; */
+    display: none;
+}
+
+.intro__footer-link--right:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,1.0);
+}
+
+
+.link--grey {
+    color: rgba(226,169,139,1.0);
+}
+
+.link {
+    /* color: #000; */
+    
+}
+
+
+.dropdown-select-lang {
+    font-family: 'Noto Sans', sans-serif; 
+    font-size:  1.8vmin;
+    position: absolute;
+    text-decoration: none;
+    display: none;
+    background-color: transparent;
+    /* bottom: 13.5vh;
+    right: 12.0vw; */
+    
+}
+
+.customs-dropdown-select {
+    border-radius: 0.5em;
+    border-width: 2px;
+    background-color: transparent;
+    border-color:  rgba(226,169,139,1.0);
+    color:  rgba(226,169,139,1.0);
+    font-family:  'Noto Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.customs-dropdown-select:hover{
+    border-radius: 0.5em;
+    background-color: transparent;
+    border-color: #ecbea6;
+    color: rgba(226,169,139,1.0);
+    font-family:  'Noto Sans', sans-serif;
+}
+
+
+.customs-dropdown-select:focus {
+    outline: 0;
+    border-color: #ecbea6;
+}
+
+option:checked:hover, select:focus option:checked:hover {
+    background-color: darkgoldenrod;
+    color: darkgoldenrod;
+}
+
+
+select option{
+    background: rgba(226,169,139,0.2);
+    outline:none;
+}
+
+select option:checked {  
+      
+    color: #9f553f;
+    box-shadow: 0 0 10px 100px #000 inset;
+}
+
+select:active, select:hover {
+    outline: none
+  }
+  
+  /* make it red instead (with with same width and style) */
+  select:active, select:hover {
+    outline-color: red
+  }
+
+.zodiac_select_name {
+    font-family: 'Supermercado One, cursive';
+    font-size: 0.1vw;
+    text-align: center;
+}
+
+.zodiac-ic-name {
+    font-size:  0.9em;
+    margin: 0;
+}
+
+.btn-select-zodiac{
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+select option:checked:after {
+    content: attr(title);
+    background: #666;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+}
+
+.btn-zodiac {
+    padding-bottom: 10;
+}
+
+.modal-content {
+    border-radius: 50px;
+}
+
+.custom-modal {
+
+    padding: 0.25rem;
+}
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .zodiac-select-box {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+} */

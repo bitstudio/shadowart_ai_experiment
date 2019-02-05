@@ -1,0 +1,17 @@
+{
+    "sound": [
+        { "id": "sound_01", "src": "content/sounds/01.mp3"},
+        { "id": "sound_02", "src": "content/sounds/02.mp3"},
+        { "id": "sound_03", "src": "content/sounds/03.mp3"},
+        { "id": "sound_04", "src": "content/sounds/04.mp3"},
+        { "id": "sound_05", "src": "content/sounds/05.mp3"},
+        { "id": "sound_06", "src": "content/sounds/06.mp3"},
+        { "id": "sound_07", "src": "content/sounds/07.mp3"},
+        { "id": "sound_08", "src": "content/sounds/08.mp3"},
+        { "id": "sound_09", "src": "content/sounds/09.mp3"},
+        { "id": "sound_10", "src": "content/sounds/10.mp3"},
+        { "id": "sound_11", "src": "content/sounds/11.mp3"},
+        { "id": "sound_12", "src": "content/sounds/12.mp3"}        
+    ]
+
+}
