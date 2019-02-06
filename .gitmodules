@@ -1,0 +1,3 @@
+[submodule "zodiac_google"]
+	path = zodiac_google
+	url = https://github.com/thebitstudio/zodiac_google.git
