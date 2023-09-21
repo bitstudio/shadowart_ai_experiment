@@ -15,43 +15,45 @@
 -->
 
 <html>
-<head>  
+
+<head>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NR57KWN');
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NR57KWN');
   </script>
   <!-- End Google Tag Manager -->
-      
+
 
   <!-- Global site tag (gtag.js) - Google Analytic  s -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132977570-1"></script>
- 
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-132977570-1', {
-        'referrer' : document.referrer.split('?')[0],
-        'location': window.location.href.split("?")[0],
+      'referrer': document.referrer.split('?')[0],
+      'location': window.location.href.split("?")[0],
     });
-    
-  </script>
 
-  <meta 
-    name='viewport' 
-    content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no , viewport-fit=cover' 
-  />
+  </script>
+  
+  <meta name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no , viewport-fit=cover' />
   <meta name="apple-mobile-web-app-title" content="ShadowPlay" />
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <title>Google Shadow Art</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="third_party/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="third_party/css/bootstrap-datepicker3.css"/>
+  <link rel="stylesheet" href="third_party/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="third_party/css/bootstrap-datepicker3.css" />
   <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
@@ -60,36 +62,38 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-  
- <style>
-    body {
-      margin: 0;
-    }
-  </style>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400&family=Google+Sans:wght@500&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400&family=Google+Sans:wght@500&display=swap">
+  <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet">
   
+
 </head>
-<body>    
+
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR57KWN"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR57KWN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-
-
+ 
   <div class="my-container forSafari">
-      <div id="parent-wrapper">
-        <div id="fade-wrapper" class="center-message inner"><img id="loading_img" width="10%" height="auto" src="content/ui/en-us/loading_cycle.gif"/></div>
-      </div>
+    <div id="parent-wrapper">
+      <div id="fade-wrapper" class="center-message inner"><img id="loading_img" width="10%" height="auto"
+          src="content/ui/en-us/loading_cycle.gif" /></div>
+    </div>
 
     <div id="display_container" class="display-camera-container rcorners">
     </div>
     <div id="out_line_diagrame" class="display-camera-container rcorners_2">
-      <div id="calibrate_message" class="center-message" >Calibrating...</div>
+      <div id="calibrate_message" class="center-message">Calibrating...</div>
 
-      <img id="hand_guide_diagram" class="rcorners_2" src="content/hand_guide_diagram/empty.png"  width="500" height="500">
+      <img id="hand_guide_diagram" class="rcorners_2" src="content/hand_guide_diagram/empty.png" width="500"
+        height="500">
     </div>
-    
+
     <div id="sample_container" class="col s6 m4">
     </div>
     <div id="draw_container" class="col s6 m4">
@@ -97,43 +101,45 @@
 
     <div id="draw_test" class="col s6 m4">
     </div>
-    
-    
+
+
     <a id="btn_practice" href="#" class="float center-message btn-message-color">
-        Practice
-    </a> 
+      Practice
+    </a>
     <a id="btn_play" href="#" class="center-message btn-message-color">
-        
+
     </a>
 
     <a id="btn_play_end" href="#" class="float center-message btn-message-color">
-        
+
     </a>
   </div>
 
-  <a  id="select_zodiac" href="#" class="float center-message btn-message-color">
-  </a> 
-  
+  <a id="select_zodiac" href="#" class="float center-message btn-message-color">
+  </a>
 
-  <a  id="select_year" href="#" class="datepicker float center-message noselect ">
-      <p id="year_text" class="noselect center-message" style="padding-top:1.75vw;font-size:2.2vw;font-family: SupermercadoOneRegular">19</p>
-  </a> 
+
+  <a id="select_year" href="#" class="datepicker float center-message noselect ">
+    <p id="year_text" class="noselect center-message"
+      style="padding-top:1.75vw;font-size:2.2vw;font-family: SupermercadoOneRegular">19</p>
+  </a>
 
 
   <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog  modal-dialog-centered">
       <div class="modal-content" style="border-radius: 50px;">
-        
+
         <div class="modal-body">
-          <div class="container" >
+          <div class="container">
             <div class="col-sm-12">
               <div class="row">
                 <div id="modal_zodiac_body" class="col-sm-8 ">
-              
+
                 </div>
-                <div class=" col-sm-4 btn-select-zodiac">             
-                  <a id="btn_select_zodiac" href="#" class="center-message btn-message-color btn-select-zodiac" data-dismiss="modal" ></a>
-                </div>             
+                <div class=" col-sm-4 btn-select-zodiac">
+                  <a id="btn_select_zodiac" href="#" class="center-message btn-message-color btn-select-zodiac"
+                    data-dismiss="modal"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -146,48 +152,57 @@
   </div>
 
 
- 
+
 
   <a id="btn_next" href="#" class="float center-message btn-message-color">
-        
+
   </a>
   <a id="btn_begin" href="#" class="float center-message btn-message-color">
-        
+
   </a>
- 
+
   <a id="btn_save" href="#" class="float center-message btn-message-color">
-        
+
   </a>
- 
+
   <a id="btn_fb" href="#" class="float center-message btn-message-color">
-        
+
   </a>
 
 
   <a id="btn_twitter" href="#" class="float center-message btn-message-color">
-        
+
   </a>
-  
-  <a href="https://www.google.com/policies/" target="_blank" class="center-message link link--grey intro__footer-link--right">Privacy &amp; Terms</a>
+
+  <a href="https://www.google.com/policies/" target="_blank"
+    class="center-message link link--grey intro__footer-link--right">Privacy &amp; Terms</a>
 
   <div id="dropdown_select_lang" class="center-message dropdown-select-lang">
-      <select id="dropdown_select" class="customs-dropdown-select">
-        <option value="en-us">English</option>
-        <option value="zh-cn">Chinese (Simplified)</option>
-        <option value="zh-hk">Chinese (Hong Kong)</option>
-        <option value="zh-tw">Chinese (Taiwan)</option>
-        <option value="ko">Korean</option>
-        <option value="ja">Japanese</option>
-        <option value="es">Spanish</option>
-        <option value="pt-br">Portuguese (Brazil)</option>
-        <option value="th">Thai (Thailand)</option>
-        <option value="ms">Malay (Malaysia)</option>
-        <option value="id">Indonesian (Indonesia)</option>
-  
-      </select>
-    </div>
+    <select id="dropdown_select" class="customs-dropdown-select">
+      <option value="en-us">English</option>
+      <option value="zh-cn">Chinese (Simplified)</option>
+      <option value="zh-hk">Chinese (Hong Kong)</option>
+      <option value="zh-tw">Chinese (Taiwan)</option>
+      <option value="ko">Korean</option>
+      <option value="ja">Japanese</option>
+      <option value="es">Spanish</option>
+      <option value="pt-br">Portuguese (Brazil)</option>
+      <option value="th">Thai (Thailand)</option>
+      <option value="ms">Malay (Malaysia)</option>
+      <option value="id">Indonesian (Indonesia)</option>
+
+    </select>
+  </div>
 
   <button id="play_again_btn" class="play-again-btn"></button>
+  
+  <ul class="glue-footer__global-links glue-no-bullet" role="list">
+    <li aria-hidden="true" class="glue-footer__global-links-list-item">
+    <button aria-hidden="true" class="glue-footer__link glue-cookie-notification-bar-control">
+        Cookies management controls
+    </button>
+    </li>
+  </ul>
 
   <script src="third_party/js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="third_party/js/popper.min.js"></script>
@@ -196,12 +211,12 @@
   <script src="third_party/js/mobile-detect.min.js"></script>
   <script src="third_party/js/tf.min.js"> </script>
   <script src="third_party/js/jquery.i18n/src/jquery.i18n.js"></script>
-	<script src="third_party/js/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
-	<script src="third_party/js/jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
-	<script src="third_party/js/jquery.i18n/src/jquery.i18n.parser.js"></script>
-	<script src="third_party/js/jquery.i18n/src/jquery.i18n.emitter.js"></script>
-	<script src="third_party/js/jquery.i18n/src/jquery.i18n.language.js"></script>
-  <script src="js/lunar_year_calculate.js" charset="utf-8"></script> 
+  <script src="third_party/js/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
+  <script src="third_party/js/jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
+  <script src="third_party/js/jquery.i18n/src/jquery.i18n.parser.js"></script>
+  <script src="third_party/js/jquery.i18n/src/jquery.i18n.emitter.js"></script>
+  <script src="third_party/js/jquery.i18n/src/jquery.i18n.language.js"></script>
+  <script src="js/lunar_year_calculate.js" charset="utf-8"></script>
   <script src="third_party/js/pc-autocompletion.js" charset="utf-8"></script>
   <script src="third_party/js/opencv.js" charset="utf-8"></script>
   <script src="js/processing/preprocessing.js" charset="utf-8"></script>
@@ -211,7 +226,7 @@
   <script src="js/core.js" charset="utf-8"></script>
   <script src="js/zodiac_manager.js" charset="utf-8"></script>
   <script src="js/sprite.js" charset="utf-8"></script>
-  <script src="js/utils.js" charset="utf-8"></script>  
+  <script src="js/utils.js" charset="utf-8"></script>
   <script src="js/mode/endMode.js" charset="utf-8"></script>
   <script src="js/mode/landingMode.js" charset="utf-8"></script>
   <script src="js/mode/selectMode.js" charset="utf-8"></script>
@@ -219,11 +234,11 @@
   <script src="js/app.js" charset="utf-8"></script>
   <script type="text/javascript">
     var timer = null;
-    document.onscroll =  function(event) {
-      if(timer !== null) {
-        clearTimeout(timer);        
+    document.onscroll = function (event) {
+      if (timer !== null) {
+        clearTimeout(timer);
       }
-      timer = setTimeout(function() {
+      timer = setTimeout(function () {
         window.scrollTo(0, 1);
       }, 75);
       event.preventDefault();
@@ -231,10 +246,14 @@
     document.addEventListener('gesturestart', function (e) {
       e.preventDefault();
     });
-    document.ontouchmove = function(e){ e.preventDefault(); }
-    document.ontouchstart =  function(e){ e.preventDefault(); }
+    document.ontouchmove = function (e) { e.preventDefault(); }
+    document.ontouchstart = function (e) { e.preventDefault(); }
+  
   </script>
-
+  <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js"
+    data-glue-cookie-notification-bar-category="2A"
+    data-glue-cookie-notification-bar-site-id="shadowart.withgoogle.com">
+  </script>
 </body>
 
 </html>
