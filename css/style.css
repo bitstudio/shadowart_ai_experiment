@@ -159,6 +159,18 @@ div#fade-wrapper img {
     text-decoration: none;
 }
 
+.cookie-btn {
+    position: absolute;
+    bottom: 0%;
+    left: 4%;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2.0vmin;
+}
+
 #btn_play {
     color: #b65f5b;
     font-family: 'SupermercadoOneRegular';
@@ -423,8 +435,6 @@ select option:checked:after {
 
     padding: 0.25rem;
 }
-
-
 
 img {
     display: block;
